@@ -1,0 +1,269 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": " Dip Eyeliner Black, 5.1 ml",
+      "price": 37610,
+      "oldPrice": 37990,
+      "monthlyPrice": 2690,
+      "rating": 4.9,
+      "reviews": 2729,
+      "category": "go'zallik",
+      "thumbnail": "https://images.uzum.uz/d5fpf6bs2tab83saia20/t_product_540_high.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Dvigitel tozalovchi Axma Avtotresories, 500 g",
+      "price": 24800,
+      "oldPrice": 27900,
+      "monthlyPrice": 2195,
+      "rating": 4.8,
+      "reviews": 596,
+      "category": "avtomobil",
+      "thumbnail": "https://images.uzum.uz/ct6p7hui4n3ehka1pph0/t_product_540_high.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Dior sovg‘a uchun pardoz to‘plami",
+      "price": 67500,
+      "oldPrice": 74250,
+      "monthlyPrice": 5312,
+      "rating": 4.4,
+      "reviews": 7,
+      "category": "beauty",
+      "thumbnail": "https://images.uzum.uz/d8mok6a1146tv077h86g/t_product_540_high.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Qizlar uchun shortilar Diva Kids DVKID46",
+      "price": 54450,
+      "oldPrice": 55000,
+      "monthlyPrice": 3895,
+      "rating": 5,
+      "reviews": 6,
+      "category": "bolalar kiyimi",
+      "thumbnail": "https://images.uzum.uz/cd9bjrbb3ho5lmur2c4g/t_product_540_high.jpg"
+    },
+    {
+      "id": "5",
+      "title": "O'g'il bolalar uchun krossovkalar Adidas GV7946",
+      "price": 286600,
+      "oldPrice": 289500,
+      "monthlyPrice": 20506,
+      "rating": 4.5,
+      "reviews": 2,
+      "category": "bolalar oyoq kiyimi",
+      "thumbnail": "https://images.uzum.uz/cupefjs5j42bjc4eq1rg/t_product_540_high.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Ko‘z uchun suyuq podvodkalar",
+      "price": 11950,
+      "oldPrice": 12990,
+      "monthlyPrice": 920,
+      "rating": 4.8,
+      "reviews": 145,
+      "category": "go‘zallik",
+      "thumbnail": "https://images.uzum.uz/d909ddk9g1ku9j5ee590/t_product_540_high.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Bolalar uchun futbolka Diva Kids DVKID10",
+      "price": 51740,
+      "oldPrice": 52800,
+      "monthlyPrice": 3740,
+      "rating": 5,
+      "reviews": 3,
+      "category": "bolalar kiyimi",
+      "thumbnail": "https://images.uzum.uz/cdmhq40l08kcldtnlpag/t_product_540_high.jpg"
+    },
+    {
+      "id": "8",
+      "title": "O'g'il bolalar shortilari Diva Kids DVKID15",
+      "price": 81220,
+      "oldPrice": 86400,
+      "monthlyPrice": 6120,
+      "rating": 5,
+      "reviews": 3,
+      "category": "bolalar kiyimi",
+      "thumbnail": "https://images.uzum.uz/cdmhvh0v1htd23ahur60/t_product_540_high.jpg"
+    },
+    {
+      "id": "9",
+      "title": "Qosh va kipriklarni o‘stiruvchi \"Rames\"",
+      "price": 33840,
+      "oldPrice": 37220,
+      "monthlyPrice": 2663,
+      "rating": 4.5,
+      "reviews": 1548,
+      "category": "go‘zallik",
+      "thumbnail": "https://images.uzum.uz/d9877uk9g1ku9j5hupd0/t_product_540_high.jpg"
+    },
+    {
+      "id": "10",
+      "title": "O'g'il bolalar uchun polo Diva Kids DVKID14",
+      "price": 105470,
+      "oldPrice": 112200,
+      "monthlyPrice": 7947,
+      "rating": 5,
+      "reviews": 1,
+      "category": "bolalar kiyimi",
+      "thumbnail": "https://images.uzum.uz/cd76e235a95unf132gjg/t_product_540_high.jpg"
+    },
+    {
+      "id": "11",
+      "title": "Annibale Colombo Bed",
+      "price": 1899.99,
+      "oldPrice": 2070,
+      "monthlyPrice": 158,
+      "rating": 4.77,
+      "reviews": 3,
+      "category": "furniture",
+      "thumbnail": "https://images.uzum.uz/ce24r9gv1htd23aigfg0/t_product_540_high.jpg"
+    },
+    {
+      "id": "12",
+      "title": "Annibale Colombo Sofa",
+      "price": 2499.99,
+      "oldPrice": 2900,
+      "monthlyPrice": 208,
+      "rating": 3.92,
+      "reviews": 3,
+      "category": "furniture",
+      "thumbnail": "https://images.uzum.uz/cdmhgsavtie1lhbdtrcg/t_product_540_high.jpg"
+    },
+    {
+      "id": "13",
+      "title": "Qizlar uchun kombinezon Mayoral 6836",
+      "price": 182200,
+      "oldPrice": 729000,
+      "monthlyPrice": 12905,
+      "rating": 4.5,
+      "reviews": 1,
+      "category": "bolalar kiyimi",
+      "thumbnail": "https://images.uzum.uz/cvv0cedpb7fbmqmo0uu0/t_product_540_high.jpg"
+    },
+    {
+      "id": "14",
+      "title": "Xushbo'ylangan suv Avon Summer White Maldives, 50 ml",
+      "price": 74870,
+      "oldPrice": 77990,
+      "monthlyPrice": 5524,
+      "rating": 4.8,
+      "reviews": 121,
+      "category": "atir",
+      "thumbnail": "https://images.uzum.uz/datl8ab4kamtgrh48st0/t_product_540_high.jpg"
+    },
+    {
+      "id": "15",
+      "title": "Tova Kukmara yopishmaydigan qoplamali, 26 sm",
+      "price": 335610,
+      "oldPrice": 339000,
+      "monthlyPrice": 24012,
+      "rating": 4.9,
+      "reviews": 1437,
+      "category": "oshxona",
+      "thumbnail": "https://images.uzum.uz/davnjenm6mg6a1brnps0/t_product_540_high.jpg"
+    },
+    {
+      "id": "16",
+      "title": "Qahva Nescafe Classic, 500 g",
+      "price": 146990,
+      "oldPrice": 149990,
+      "monthlyPrice": 10624,
+      "rating": 4.9,
+      "reviews": 582,
+      "category": "oziq-ovqat",
+      "thumbnail": "https://images.uzum.uz/d5fpf6bs2tab83saia20/t_product_540_high.jpg"
+    },
+    {
+      "id": "17",
+      "title": "Quyultirilgan sut Alekseevskoe, 8.5%, 360 gr",
+      "price": 36390,
+      "oldPrice": 55000,
+      "monthlyPrice": 2832,
+      "rating": 4.9,
+      "reviews": 1942,
+      "category": "oziq-ovqat",
+      "thumbnail": "https://images.uzum.uz/ct6p7hui4n3ehka1pph0/t_product_540_high.jpg"
+    },
+    {
+      "id": "21",
+      "title": "Cucumber",
+      "category": "groceries",
+      "price": 1.49,
+      "monthlyPrice": 2832,
+      "reviews": 192,
+      "rating": 4.07,
+      "oldPrice": 2,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/cucumber/thumbnail.webp"
+    },
+    {
+      "id": "22",
+      "title": "Dog Food",
+      "category": "groceries",
+      "price": 10.99,
+      "discountPercentage": 10.27,
+      "rating": 4.55,
+      "reviews": 125,
+      "oldPrice": 7,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/dog-food/thumbnail.webp"
+    },
+    {
+      "id": "23",
+      "title": "Eggs",
+      "category": "groceries",
+      "price": 2.99,
+      "discountPercentage": 11.05,
+      "rating": 2.53,
+      "oldPrice": 7,
+      "reviews": 1942,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/eggs/thumbnail.webp"
+    },
+    {
+      "id": "24",
+      "title": "Fish Steak",
+      "category": "groceries",
+      "price": 14.99,
+      "discountPercentage": 4.23,
+      "rating": 3.78,
+      "stock": 74,
+      "oldPrice": 25,
+      "reviews": 450,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/fish-steak/thumbnail.webp"
+    },
+    {
+      "id": "25",
+      "title": "Green Bell Pepper",
+      "category": "groceries",
+      "price": 1.29,
+      "discountPercentage": 0.16,
+      "rating": 3.25,
+      "reviews": 12,
+      "oldPrice": 7,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/thumbnail.webp"
+    },
+    {
+      "id": "26",
+      "title": "Green Chili Pepper",
+      "category": "groceries",
+      "price": 0.99,
+      "discountPercentage": 1,
+      "rating": 3.66,
+      "oldPrice": 7,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/thumbnail.webp"
+    },
+    {
+      "id": "27",
+      "title": "Honey Jar",
+      "category": "groceries",
+      "price": 6.99,
+      "discountPercentage": 14.4,
+      "rating": 3.97,
+      "oldPrice": 20,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/honey-jar/thumbnail.webp"
+    }
+  ],
+  "cart": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}

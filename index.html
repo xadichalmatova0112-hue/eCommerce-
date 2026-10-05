@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAA/1BMVEVwAP///////wBrAP/9+/9kAP+FU//69/+QXP+IVf97NP/p4f9xGv/e0f///+Payv////P//ylvEP///0j//4n//17//9/ax////2r//9X//47//9D//8b//3r//73//67//5X//zn//4L//+r//6L///mfev/y7P/l3l7s403czXLi1GSJTv9wI/fRwP/Pu/+ifvyshLijdMJ8LvDHsP+ab//59SX18TTp31Px6z7ezWbHrJC2lbGlgr+PXteJT+J/OuqWbNDNuISIQuPLto2gfMSac8vWxXa6nKKZY87BpZyvi7GJVt2VZ//TwHu3laetif+BQ/+6nv/CpfyylP/6/8H7AAAKQElEQVR4nM2caV/iPBDA24YsKqgc6sKiICusILAeIAoeKHiL+rD6/T/L03I1k0zatFB+zsvSNH8mk2QymUTTZ5HYVmY792snlYzHDUvyydTObmE7vRWb6bOaf6DsbxPGQCWeTG1k/YP5g9rK/sZpoOxktxYFtVfYlCgIUdlmYS14qK1cUhVoIvmCV315g0qnlHUE9ZUOCiqWy/shGqsr58HulaFihRmQhlgFZSxFqFjOV7tBiatiKUEVs56tG5dktjgvqPTmfJAs2czMBar4a35IlvxyV5YrVGZG+xYl6aosF6h5q2kkbspyhlqbozWxsuk89zhCbQeDZMm2X6hAmm4iv31BxVJzqbx5Vj4vmVJuccNvSj6SSqGKs4+XzfbF5dV1p0aoKYmb28sS+DkppZJBpWdhapYr3ateglBiiTYWQmj97ox5LS/zHSRQa76nulb3475fo9SGYYTQ3h3zblziaOFQGR9MrfP2xUmdWjgYzxTrusVQ4Z0QhfKsp9Ld1UNHph4eq9520xUGlVZnalUen56jVA1nIvSFocLsCoGKqc128fbLyfWNZvKo40youvZn8kgfFKFibv2uWT7ovvapR/VAKsbckZFBhHIcM1uPrw/9G+JHPayQKDM0pNyhNiTqOT+4e+3NpB5A1WHsdsMNCpuD4+3L2359ZvUAYc3KyDpDrfFAlbuTGp0rzkhIlK1lzQmqCP2n1rE5Ns+luUShB0xFm0UHKOCsdHtBAVlCntm6fsmhWIOq3ARIZEm9zFJty6CKzKj5On8z4gSYupEvSqDs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">
+    <title>Uzum Market</title>
+</head>
+
+<body class="font-Inter">
+
+    <div class="container mx-auto px-4">
+
+        <header class="flex flex-wrap items-center justify-between gap-4 py-4">
+
+            <div class="flex items-center gap-2">
+                <img width="60" src="https://uzum.com/images/services/market.png" alt="Uzum logo">
+                <span class="text-xl font-bold text-purple-700">uzum market</span>
+            </div>
+
+            <div class="flex flex-1 items-center gap-4 min-w-[300px]">
+                <input type="text" class="input input-bordered" placeholder="Katalog" list="catalog-list">
+                <datalist id="catalog-list">
+                    <option value="Mebel"></option>
+                    <option value="Elektronika"></option>
+                    <option value="Aksessuarlar"></option>
+                    <option value="Kiyim"></option>
+                    <option value="Maishiy texnika"></option>
+                    <option value="Poyabzallar"></option>
+                    <option value="Salomatlik"></option>
+                    <option value="Bolalar tovarlari"></option>
+                    <option value="Oziq-ovqat mahsulotlari"></option>
+                    <option value="Sport va xordiq"></option>
+                    <option value="Hayvonlar"></option>
+                </datalist>
+
+                <input type="text" id="searchInput" placeholder="Mahsulotlar va turkumlar izlash..."
+                    class="input input-primary flex-1 max-w-xl">
+            </div>
+
+            <!-- Tugmalar -->
+            <div class="flex items-center gap-3">
+                <button type="button" id="loginBtn" class="btn btn-soft btn-primary">Kirish</button>
+                <button type="button" id="favoriteBtn" class="btn btn-soft btn-primary">Saralangan</button>
+                <button type="button" id="cartBtn" class="btn btn-soft btn-primary">Savat</button>
+            </div>
+
+        </header>
+
+        <nav class="border-t pt-3">
+            <ol class="flex items-center gap-8 overflow-x-auto text-sm">
+                <li><a href="#" class="hover:text-purple-600 whitespace-nowrap">Arzon narxlar kafolati</a></li>
+                <li><a href="#" class="hover:text-purple-600 whitespace-nowrap">Kuzgi kolleksiya</a></li>
+                <li><a href="#" class="hover:text-purple-600 whitespace-nowrap">Maktab chegirmalari</a></li>
+                <li><a href="#" class="hover:text-purple-600 whitespace-nowrap">Mebel</a></li>
+                <li><a href="#" class="hover:text-purple-600 whitespace-nowrap">Elektronika</a></li>
+                <li><a href="#" class="hover:text-purple-600 whitespace-nowrap">Kiyim</a></li>
+                <li><a href="#" class="hover:text-purple-600 whitespace-nowrap">Maishiy texnika</a></li>
+                <li><a href="#" class="hover:text-purple-600 whitespace-nowrap">Poyabzallar</a></li>
+                <li><a href="#" class="hover:text-purple-600 whitespace-nowrap">Yana &gt;</a></li>
+            </ol>
+        </nav>
+
+    </div>
+
+    <main>
+
+        <section class="container mx-auto px-4 mt-8">
+            <div class="carousel w-full rounded-3xl overflow-hidden">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="https://images.uzum.uz/datl8ab4kamtgrh48st0/main_page_banner.jpg" alt="Banner 1"
+                        class="w-full">
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="https://images.uzum.uz/cvv0cedpb7fbmqmo0uu0/t_shop_cover_high.jpg" alt="Banner 2"
+                        class="w-full">
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="https://images.uzum.uz/davnjenm6mg6a1brnps0/main_page_banner.jpg" alt="Banner 3"
+                        class="w-full">
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-4 mt-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+
+                <a href="#products" class="card card-side bg-base-200 items-center p-3 hover:shadow-md transition">
+                    <div class="bg-white rounded-full w-12 h-12 flex items-center justify-center shrink-0">
+                        <img src="https://static.uzum.uz/static/promo_images/73d136ba-c4f7-4464-bd7c-f9fd9fd6e9a9"
+                            class="w-8 h-8 object-contain" alt="">
+                    </div>
+                    <h3 class="ml-3 text-sm">Texnika va elektronika</h3>
+                </a>
+
+                <a href="#products" class="card card-side bg-base-200 items-center p-3 hover:shadow-md transition">
+                    <div class="bg-white rounded-full w-12 h-12 flex items-center justify-center shrink-0">
+                        <img src="https://static.uzum.uz/static/promo_images/e6e79f7c-9305-4d52-83bb-0b3c5f8b877f"
+                            class="w-8 h-8 object-contain" alt="">
+                    </div>
+                    <h3 class="ml-3 text-sm">Kundalik ishlatishga</h3>
+                </a>
+
+                <a href="#products" class="card card-side bg-base-200 items-center p-3 hover:shadow-md transition">
+                    <div class="bg-white rounded-full w-12 h-12 flex items-center justify-center shrink-0">
+                        <img src="https://static.uzum.uz/static/promo_images/f2c5d131-80e9-4971-9848-16d60f4f4588"
+                            class="w-8 h-8 object-contain" alt="">
+                    </div>
+                    <h3 class="ml-3 text-sm">Zamonaviy bozor</h3>
+                </a>
+
+                <a href="#products" class="card card-side bg-base-200 items-center p-3 hover:shadow-md transition">
+                    <div class="bg-white rounded-full w-12 h-12 flex items-center justify-center shrink-0">
+                        <img src="https://static.uzum.uz/static/promo_images/509ccd0c-74b5-48ab-8858-8cff1d021960"
+                            class="w-8 h-8 object-contain" alt="">
+                    </div>
+                    <h3 class="ml-3 text-sm">Sizning go'zalligingiz</h3>
+                </a>
+
+            </div>
+        </section>
+
+        <section id="products" class="container mx-auto px-4 mt-12 mb-20">
+            <h2 class="text-2xl font-semibold mb-5">Mashhurlar</h2>
+
+            <div id="productsBox" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            </div>
+
+            <div id="showMoreBox" class="mt-8 max-w-2xl mx-auto">
+            </div>
+        </section>
+
+
+        <section class="container mx-auto px-4 mt-12">
+            <h2 class="text-2xl font-semibold mb-5 flex items-center gap-2">
+                Arzon narxlar kafolati
+                <span class="text-gray-400">›</span>
+            </h2>
+
+            <div id="cheapBox" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 mt-20">
+        <div class="container mx-auto px-4 py-12">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Biz haqimizda</h3>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li>
+                            <a href="https://2gis.uz/uz/tashkent/branches/70000001064020227" target="_blank"
+                                class="hover:text-purple-600 transition-colors">
+                                Topshirish punktlari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-purple-600 transition-colors">
+                                Vakansiyalar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Foydalanuvchilarga</h3>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li>
+                            <a href="https://t.me/Uzum_Support_Bot" target="_blank"
+                                class="hover:text-purple-600 transition-colors">
+                                Biz bilan bog'lanish
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://uzum.uz/uz/faq" target="_blank"
+                                class="hover:text-purple-600 transition-colors">
+                                Savol-Javob
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Tadbirkorlarga</h3>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li>
+                            <a href="#" class="hover:text-purple-600 transition-colors">
+                                Uzumda soting
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-purple-600 transition-colors">
+                                Sotuvchi kabinetiga kirish
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-purple-600 transition-colors">
+                                Topshirish punktini ochish
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Ilovani yuklab olish</h3>
+
+                    <div class="flex items-center gap-4 mb-6">
+                        <a href="#" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+                            </svg>
+                            <span class="text-sm">AppStore</span>
+                        </a>
+
+                        <a href="#" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24">
+                                <path fill="#00D9FF"
+                                    d="M3.6 1.7c-.4.3-.6.7-.6 1.3v18c0 .6.2 1 .6 1.3l.1.1L13.8 12v-.2L3.7 1.6l-.1.1z" />
+                                <path fill="#FFD400"
+                                    d="M17.2 15.4l-3.4-3.4v-.2l3.4-3.4.1.1 4 2.3c1.2.7 1.2 1.8 0 2.4l-4 2.3-.1-.1z" />
+                                <path fill="#FF3A44" d="M17.3 15.3L13.8 11.8 3.6 22.3c.4.4 1 .4 1.7 0l12-6.9" />
+                                <path fill="#00C853" d="M17.3 8.5l-12-6.9c-.7-.4-1.3-.4-1.7 0l10.2 10.2 3.5-3.3z" />
+                            </svg>
+                            <span class="text-sm">Google Play</span>
+                        </a>
+                    </div>
+
+                    <h3 class="text-lg font-semibold mb-4">Uzum ijtimoiy tarmoqlarda</h3>
+
+                    <div class="flex items-center gap-3">
+                        <a href="https://www.instagram.com/" target="_blank"
+                            class="w-10 h-10 rounded-lg bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 flex items-center justify-center hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.2.8-.4.4-.6.7-.8 1.2-.2.4-.3 1-.4 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.2.4.4.7.6 1.2.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.2-.8.4-.4.6-.7.8-1.2.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.2-.4-.4-.7-.6-1.2-.8-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1c2.7 0 4.9 2.2 4.9 4.9s-2.2 4.9-4.9 4.9-4.9-2.2-4.9-4.9 2.2-4.9 4.9-4.9zm0 8.1c1.8 0 3.2-1.4 3.2-3.2s-1.4-3.2-3.2-3.2-3.2 1.4-3.2 3.2 1.4 3.2 3.2 3.2zm6.2-8.3c0 .6-.5 1.2-1.2 1.2s-1.2-.5-1.2-1.2.5-1.2 1.2-1.2 1.2.5 1.2 1.2z" />
+                            </svg>
+                        </a>
+
+                        <a href="https://web.telegram.org/" target="_blank"
+                            class="w-10 h-10 rounded-lg bg-sky-400 flex items-center justify-center hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z" />
+                            </svg>
+                        </a>
+
+                        <a href="https://www.facebook.com/" target="_blank"
+                            class="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z" />
+                            </svg>
+                        </a>
+
+                        <a href="https://www.youtube.com/" target="_blank"
+                            class="w-10 h-10 rounded-lg bg-red-600 flex items-center justify-center hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.5 6.2c-.3-1-1.1-1.8-2.1-2.1C19.6 3.6 12 3.6 12 3.6s-7.6 0-9.4.5c-1 .3-1.8 1.1-2.1 2.1C0 8 0 12 0 12s0 4 .5 5.8c.3 1 1.1 1.8 2.1 2.1 1.8.5 9.4.5 9.4.5s7.6 0 9.4-.5c1-.3 1.8-1.1 2.1-2.1.5-1.8.5-5.8.5-5.8s0-4-.5-5.8zM9.5 15.6V8.4l6.3 3.6-6.3 3.6z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div
+                class="border-t border-gray-200 mt-10 pt-6 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
+
+                <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium">
+                    <a href="#" class="hover:text-purple-600 transition-colors">Maxfiylik kelishuvi</a>
+                    <a href="#" class="hover:text-purple-600 transition-colors">Foydalanuvchi kelishuvi</a>
+                    <a href="#" class="hover:text-purple-600 transition-colors">
+                        SHAXSIY MA'LUMOTLARNI QAYTA ISHLASH NIZOMI «UZUM MARKET» MCHJ XK
+                    </a>
+                </div>
+
+                <p class="text-sm text-gray-400">
+                    ©2026© XK MCHJ «UZUM MARKET» STIR 309376127. Barcha huquqlar himoyalangan»
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- KIRISH MODAL -->
+    <div id="loginModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-2xl w-full max-w-md p-8 relative">
+
+            <button id="closeLogin"
+                class="absolute top-4 right-4 w-9 h-9 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200">
+                ✕
+            </button>
+
+            <div class="text-center mb-6">
+                <span class="text-2xl font-bold text-purple-700">uzum ID</span>
+            </div>
+
+            <h2 class="text-2xl font-bold text-center mb-6">Uzum Market'ga kirish</h2>
+
+            <input type="text" id="phoneInput" placeholder="+998 00 000-00-00"
+                class="w-full bg-gray-100 rounded-xl px-4 py-4 text-lg outline-none focus:bg-gray-200 mb-4">
+
+            <button id="loginActionBtn"
+                class="w-full bg-purple-700 hover:bg-purple-800 text-white font-semibold py-4 rounded-xl transition-colors">
+                Kodni olish
+            </button>
+
+            <p class="text-xs text-center text-gray-500 mt-6 leading-relaxed">
+                Davom etgan holda men
+                <a href="#" class="underline">shaxsiy ma'lumotlarni qayta ishlash siyosatiga</a> rozilik bildirasiz va
+                <a href="#" class="underline">Uzum ID ommaviy oferta</a> bilan rozi bo'laman
+            </p>
+
+        </div>
+    </div>
+
+    <!-- SARALANGAN MODAL -->
+    <div id="favoriteModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-2xl w-full max-w-md p-8 relative">
+
+            <button id="closeFavorite"
+                class="absolute top-4 right-4 w-9 h-9 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200">
+                ✕
+            </button>
+
+            <div class="text-center">
+                <div class="text-7xl mb-4">💚</div>
+
+                <h2 class="text-xl font-bold mb-3">Bu yerda sevimli tovarlaringizni saqlab qo'yamiz</h2>
+
+                <p class="text-gray-500 text-sm">
+                    Odatda buyurtma qiladigan yoki keyinroq sotib olishni istagan tovarlarda ♡ belgisini bosing
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SAVAT MODAL -->
+    <div id="cartModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-2xl w-full max-w-2xl p-6 relative max-h-[85vh] flex flex-col">
+
+            <div class="flex items-center justify-between mb-5">
+                <h2 class="text-2xl font-bold">Savat</h2>
+                <button id="closeCart"
+                    class="w-9 h-9 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200">
+                    ✕
+                </button>
+            </div>
+
+            <div id="cartItems" class="overflow-y-auto flex-1">
+                <!-- JS orqali to'ldiriladi -->
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
